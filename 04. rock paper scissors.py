@@ -34,6 +34,9 @@ if choice == 1:
 if choice == 2:
     print("You have chosen")
     print(scissors)
+else:
+    print("You typed an invalid number! You lose!")
+    exit()
 if computer == 0:
     print("Computer has chosen")
     print(rock)
@@ -57,9 +60,6 @@ elif choice == 2 and computer == 0:
     print("You've lost!")
 elif choice == 2 and computer == 1:
     print("You've won!")
-else:
-    print("You typed an invalid number! You lose!")
-    exit()
 print("Thanks for Playing!")
 
 
