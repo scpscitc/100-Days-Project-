@@ -1,5 +1,5 @@
 import random
-words=["mouse", "horse", "camel"]
+words=["mouse", "horse", "camel", "tiger", "lion", "cow", "dog", "cat"]
 logo = ''' 
  _                                             
 | |                                            
@@ -81,6 +81,7 @@ stages = ['''
 ''']
 print("Welcome to hangman")
 print(logo)
+print("It might be an animal uk!")
 randon_word = random.choice(words)
 print("_"*len(randon_word))
 game_over = False
