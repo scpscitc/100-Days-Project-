@@ -82,7 +82,6 @@ stages = ['''
 print("Welcome to hangman")
 print(logo)
 randon_word = random.choice(words)
-print(randon_word)
 print("_"*len(randon_word))
 game_over = False
 correct_letters = []
