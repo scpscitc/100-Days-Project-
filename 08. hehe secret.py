@@ -50,6 +50,8 @@ while over != True:
        elif further == "no":
            print("Goodbye~")
            over = True
+       else:
+           over = True
    elif choice == "decode":
        decrypt()
        further = input("Type 'yes' if you want to go again. Otherwise type 'no'")
@@ -57,6 +59,8 @@ while over != True:
            over = False
        elif further == "no":
            print("Goodbye~")
+           over = True
+       else:
            over = True
    else:
        print("invalid command!")
