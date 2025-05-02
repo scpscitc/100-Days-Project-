@@ -1,5 +1,15 @@
 import random
-words=["mouse", "horse", "camel", "tiger", "lion", "cow", "dog", "cat"]
+animals = ["mouse", "horse", "camel", "tiger", "lion", "cow", "dog", "cat"]
+birds = ["sparrow", "eagle", "parrot", "pigeon", "owl", "duck", "peacock", "swan", "flamingo",
+              "woodpecker", "crow", "hawk", "penguin", "ostrich", "canary", "crane", "robin",
+              "seagull", "falcon", "kingfisher"]
+fruits = ["apple", "banana", "mango", "grape", "orange", "papaya", "pear", "peach", "kiwi", "melon"]
+countries = ["brazil", "canada", "france", "germany", "india", "japan", "mexico", "nepal", "spain", "turkey"]
+colors = ["red", "blue", "green", "yellow", "purple", "orange", "black", "white", "pink", "brown"]
+professions = ["doctor", "teacher", "engineer", "pilot", "nurse", "chef", "artist", "lawyer", "farmer", "singer"]
+
+words= animals + birds + fruits + countries + colors + professions
+
 logo = ''' 
  _                                             
 | |                                            
@@ -81,8 +91,22 @@ stages = ['''
 ''']
 print("Welcome to hangman")
 print(logo)
-print("It might be an animal uk!")
+print(stages[6])
 randon_word = random.choice(words)
+#************************
+if randon_word in animals:
+    print("It might be an animal uk!")
+elif randon_word in birds:
+    print("It might be a bird uk!")
+elif randon_word in fruits:
+    print("It might be a fruit uk!")
+elif randon_word in countries:
+    print("It might be a country uk!")
+elif randon_word in professions:
+    print("It might be a profession uk!")
+elif randon_word in colors:
+    print("It might be a color uk!")
+#*****************************
 print("_"*len(randon_word))
 game_over = False
 correct_letters = []
@@ -106,6 +130,7 @@ while not game_over:
     if life == 0:
         game_over = True
         print("You lose the game!")
+        print(f"Huh! the word was '{randon_word}'")
         print(lose)
     if "_" not in display:
         game_over = True
