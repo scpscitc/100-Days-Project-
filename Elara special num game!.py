@@ -18,7 +18,6 @@ task = [
 num = random.randint(1, 100)
 print("Welcome to the Number Guessing Game!")
 print("I'm thinking of a number between 1 and 100")
-print(num)
 diff = input("Choose a Difficalty. Type 'easy' or 'hard': ").lower()
 if diff == "easy":
     life = 10
