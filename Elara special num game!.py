@@ -63,7 +63,7 @@ while life != 0:
                 if chance_2 == "yes":
                     chance_3 = input("Ki korso??? Type 'yes' or 'no': ").lower()
                     if chance_3 == "yes":
-                        print("Cool! Jao tmk valobeshe aro 3ta attempt dilam! go and try!")
+                        print("Cool! Jao tmk valobeshe aro 3ta attempt dilam! Love you~ go and try!")
                         life = life + 3
                     else:
                         print("vule gela naki?!....but vulso toh morso! You are gone baby!")
